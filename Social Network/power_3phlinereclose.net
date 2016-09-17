@@ -1,0 +1,178 @@
+Unit specified : OMU
+
+rlc matrix:
+
+Node_1 Node_2 Type      R(ohms)     L(mH)       C(uF)/U(V)  Branch#  Block name
+------------------------------------------------------------------------------------
+4      0      S         8.76        2324        0           1        200 Mvar with L neutral1/Xnl 876 ohms Q=100
+12     0      S         8.76        2324        0           2        200 Mvar with L neutral2/Xnl 876 ohms Q=100
+26     4      S         10.8        7165        0           3        phase_A: 200 Mvar with L neutral1/200 Mvar Q=250
+21     4      S         10.8        7165        0           4        phase_B: 200 Mvar with L neutral1/200 Mvar Q=250
+22     4      S         10.8        7165        0           5        phase_C: 200 Mvar with L neutral1/200 Mvar Q=250
+13     12     S         10.8        7165        0           6        phase_A: 200 Mvar with L neutral2/200 Mvar Q=250
+11     12     S         10.8        7165        0           7        phase_B: 200 Mvar with L neutral2/200 Mvar Q=250
+14     12     S         10.8        7165        0           8        phase_C: 200 Mvar with L neutral2/200 Mvar Q=250
+3      0      S         0.9522      0           0           9        phase_A: 200 MW                                 
+1      0      S         0.9522      0           0           10       phase_B: 200 MW                                 
+2      0      S         0.9522      0           0           11       phase_C: 200 MW                                 
+20     0      S         10.8        7165        0           12       phase_A: 200 Mvar1                              
+18     0      S         10.8        7165        0           13       phase_B: 200 Mvar1                              
+19     0      S         10.8        7165        0           14       phase_C: 200 Mvar1                              
+15     0      S         10.8        7165        0           15       phase_A: 200 Mvar2                              
+16     0      S         10.8        7165        0           16       phase_B: 200 Mvar2                              
+17     0      S         10.8        7165        0           17       phase_C: 200 Mvar2                              
+20     26     S         1e+005      0           0           18       snubber:  Breaker1/Breaker A                    
+18     21     S         1e+005      0           0           19       snubber:  Breaker1/Breaker B                    
+19     22     S         1e+005      0           0           20       snubber:  Breaker1/Breaker C                    
+13     15     S         1e+005      0           0           21       snubber:  Breaker2/Breaker A                    
+11     16     S         1e+005      0           0           22       snubber:  Breaker2/Breaker B                    
+14     17     S         1e+005      0           0           23       snubber:  Breaker2/Breaker C                    
+3      1      Tr        0.0002721   0.02887     1.38e+004   24       transfo_1_winding_1: 12*350 MVA 13.8//735 kV    
+20     0      Tr        0.2572      27.3        4.244e+005  25       transfo_1_winding_2: 12*350 MVA 13.8//735 kV    
+36     1      P         68.01       180.4       0           26       transfo_1_Lm: 12*350 MVA 13.8//735 kV           
+1      2      Tr        0.0002721   0.02887     1.38e+004   27       transfo_2_winding_1: 12*350 MVA 13.8//735 kV    
+18     0      Tr        0.2572      27.3        4.244e+005  28       transfo_2_winding_2: 12*350 MVA 13.8//735 kV    
+37     2      P         68.01       180.4       0           29       transfo_2_Lm: 12*350 MVA 13.8//735 kV           
+2      3      Tr        0.0002721   0.02887     1.38e+004   30       transfo_3_winding_1: 12*350 MVA 13.8//735 kV    
+19     0      Tr        0.2572      27.3        4.244e+005  31       transfo_3_winding_2: 12*350 MVA 13.8//735 kV    
+38     3      P         68.01       180.4       0           32       transfo_3_Lm: 12*350 MVA 13.8//735 kV           
+20     0      S         605.8       0           0           33       r_1_in: 200  km                                 
+18     0      S         605.8       0           0           34       r_2_in: 200  km                                 
+19     0      S         605.8       0           0           35       r_3_in: 200  km                                 
+20     18     S         1321        0           0           36       r_1_2_in: 200  km                               
+20     19     S         1321        0           0           37       r_1_3_in: 200  km                               
+18     19     S         1321        0           0           38       r_2_3_in: 200  km                               
+15     16     S         1321        0           0           39       r_1_2_out: 200  km                              
+15     17     S         1321        0           0           40       r_1_3_out: 200  km                              
+16     17     S         1321        0           0           41       r_2_3_out: 200  km                              
+15     0      S         605.8       0           0           42       r_1_out: 200  km                                
+16     0      S         605.8       0           0           43       r_2_out: 200  km                                
+17     0      S         605.8       0           0           44       r_3_out: 200  km                                
+10     0      S         599.1       0           0           45       r_1_in: 100  km2                                
+8      0      S         599.1       0           0           46       r_2_in: 100  km2                                
+9      0      S         599.1       0           0           47       r_3_in: 100  km2                                
+10     8      S         1329        0           0           48       r_1_2_in: 100  km2                              
+10     9      S         1329        0           0           49       r_1_3_in: 100  km2                              
+8      9      S         1329        0           0           50       r_2_3_in: 100  km2                              
+13     11     S         1329        0           0           51       r_1_2_out: 100  km2                             
+13     14     S         1329        0           0           52       r_1_3_out: 100  km2                             
+11     14     S         1329        0           0           53       r_2_3_out: 100  km2                             
+13     0      S         599.1       0           0           54       r_1_out: 100  km2                               
+11     0      S         599.1       0           0           55       r_2_out: 100  km2                               
+14     0      S         599.1       0           0           56       r_3_out: 100  km2                               
+26     0      S         599.1       0           0           57       r_1_in: 100  km1                                
+21     0      S         599.1       0           0           58       r_2_in: 100  km1                                
+22     0      S         599.1       0           0           59       r_3_in: 100  km1                                
+26     21     S         1329        0           0           60       r_1_2_in: 100  km1                              
+26     22     S         1329        0           0           61       r_1_3_in: 100  km1                              
+21     22     S         1329        0           0           62       r_2_3_in: 100  km1                              
+10     8      S         1329        0           0           63       r_1_2_out: 100  km1                             
+10     9      S         1329        0           0           64       r_1_3_out: 100  km1                             
+8      9      S         1329        0           0           65       r_2_3_out: 100  km1                             
+10     0      S         599.1       0           0           66       r_1_out: 100  km1                               
+8      0      S         599.1       0           0           67       r_2_out: 100  km1                               
+9      0      S         599.1       0           0           68       r_3_out: 100  km1                               
+40     15     S         2.701       71.65       0           69       phase_A: 20,000 MVA Equivalent                  
+41     16     S         2.701       71.65       0           70       phase_B: 20,000 MVA Equivalent                  
+42     17     S         2.701       71.65       0           71       phase_C: 20,000 MVA Equivalent                  
+
+Number of nodes: 27
+Number of branches: 71
+Number of transformers: 3
+Number of mutuals (inductive coupling): 0
+Number of voltage sources: 4
+Number of current sources: 27
+Number of switches: 7
+
+Source matrix:
+
+Node1 Node2 U/I  Mag.     Phase    Frequency Type   Block name
+           (0/1) (V/A)  (degrees)     (Hz)
+--------------------------------------------------------------
+20    26    1    0        0        0         2       Breaker1/Breaker A      
+18    21    1    0        0        0         2       Breaker1/Breaker B      
+19    22    1    0        0        0         2       Breaker1/Breaker C      
+13    15    1    0        0        0         2       Breaker2/Breaker A      
+11    16    1    0        0        0         2       Breaker2/Breaker B      
+14    17    1    0        0        0         2       Breaker2/Breaker C      
+10    5     1    0        0        0         2      Arc  Model/Fault         
+2     3     1    178274   -11.4303 60        13     A: 12*350 MVA  Generators
+2     1     1    178274   -131.43  60        13     B: 12*350 MVA  Generators
+0     20    1    0        0        0         19     in_phase_1: 200  km      
+0     18    1    0        0        0         19     in_phase_2: 200  km      
+0     19    1    0        0        0         19     in_phase_3: 200  km      
+0     15    1    0        0        0         19     out_phase_1: 200  km     
+0     16    1    0        0        0         19     out_phase_2: 200  km     
+0     17    1    0        0        0         19     out_phase_3: 200  km     
+0     10    1    0        0        0         19     in_phase_1: 100  km2     
+0     8     1    0        0        0         19     in_phase_2: 100  km2     
+0     9     1    0        0        0         19     in_phase_3: 100  km2     
+0     13    1    0        0        0         19     out_phase_1: 100  km2    
+0     11    1    0        0        0         19     out_phase_2: 100  km2    
+0     14    1    0        0        0         19     out_phase_3: 100  km2    
+0     26    1    0        0        0         19     in_phase_1: 100  km1     
+0     21    1    0        0        0         19     in_phase_2: 100  km1     
+0     22    1    0        0        0         19     in_phase_3: 100  km1     
+0     10    1    0        0        0         19     out_phase_1: 100  km1    
+0     8     1    0        0        0         19     out_phase_2: 100  km1    
+0     9     1    0        0        0         19     out_phase_3: 100  km1    
+5     0     0    0        0        0         24     Arc  Model/Arc voltage   
+40    0     0    600125   0        60        22     A: 20,000 MVA Equivalent 
+41    0     0    600125   -120     60        22     B: 20,000 MVA Equivalent 
+42    0     0    600125   120      60        22     C: 20,000 MVA Equivalent 
+
+Switch matrix:
+
+Node1 Node2 0/1  R.       L.       I#  U#  Switch type
+------------------------------------------------------
+20    26    1    0.001    0        1   1   Breaker
+18    21    1    0.001    0        2   2   Breaker
+19    22    1    0.001    0        3   3   Breaker
+13    15    1    0.001    0        4   4   Breaker
+11    16    1    0.001    0        5   5   Breaker
+14    17    1    0.001    0        6   6   Breaker
+10    5     0    0.001    0        7   7   Breaker
+
+Total number of inductances and capacitors: 26
+
+The following inductor currents are dependent: 
+Il_b1_n4_0 =  + Il_b3_n26_4  + Il_b4_n21_4  + Il_b5_n22_4 
+Il_b2_n12_0 =  + Il_b6_n13_12  + Il_b7_n11_12  + Il_b8_n14_12 
+
+Output expressions:
+
+y_u1 = U_ Breaker1/Breaker A
+y_u2 = U_ Breaker1/Breaker B
+y_u3 = U_ Breaker1/Breaker C
+y_u4 = U_ Breaker2/Breaker A
+y_u5 = U_ Breaker2/Breaker B
+y_u6 = U_ Breaker2/Breaker C
+y_u7 = U_Arc  Model/Fault
+y_u8 = U_AB: 12*350 MVA  Generators
+y_u9 = U_BC: 12*350 MVA  Generators
+y_u10 = U_in_phase_1: 200  km
+y_u11 = U_in_phase_2: 200  km
+y_u12 = U_in_phase_3: 200  km
+y_u13 = U_out_phase_1: 200  km
+y_u14 = U_out_phase_2: 200  km
+y_u15 = U_out_phase_3: 200  km
+y_u16 = U_in_phase_1: 100  km2
+y_u17 = U_in_phase_2: 100  km2
+y_u18 = U_in_phase_3: 100  km2
+y_u19 = U_out_phase_1: 100  km2
+y_u20 = U_out_phase_2: 100  km2
+y_u21 = U_out_phase_3: 100  km2
+y_u22 = U_in_phase_1: 100  km1
+y_u23 = U_in_phase_2: 100  km1
+y_u24 = U_in_phase_3: 100  km1
+y_u25 = U_out_phase_1: 100  km1
+y_u26 = U_out_phase_2: 100  km1
+y_u27 = U_out_phase_3: 100  km1
+y_u28 = U_A: M
+y_u29 = U_B: M
+y_u30 = U_C: M
+y_i31 = I_A: M
+y_i32 = I_B: M
+y_i33 = I_C: M
+y_i34 = I_IaF
+y_i35 = I_Arc  Model/Iarc

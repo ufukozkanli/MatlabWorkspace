@@ -1,0 +1,11 @@
+Simulation of reflections at a parabolic or spherical mirror
+
+Start MIRROR to see the simulation.
+
+Drag the light with the pressed left MouseKey, 
+rotate it with the right MouseKey.
+
+Modify the mirror by draging its base, ends or the focuspoint.
+
+With the Menu <Control> you can open a figure to control 
+the parameters of the mirror and the light. 
